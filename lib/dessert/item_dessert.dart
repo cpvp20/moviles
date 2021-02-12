@@ -20,7 +20,7 @@ class _ItemDessertState extends State<ItemDessert> {
       padding: const EdgeInsets.all(10.0),
       child: Stack(alignment: Alignment.center, children: [
         Container(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(30.0),
           width: 500,
           height: 260,
           decoration: BoxDecoration(color: grey, boxShadow: [
@@ -35,13 +35,21 @@ class _ItemDessertState extends State<ItemDessert> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Text("Postre", style: TextStyle(fontSize: 15)),
+                    Text("Postre",
+                        style: TextStyle(
+                            fontFamily: 'AkzidenzGrotesk BQ Medium',
+                            fontSize: 15)),
                     Text(
                       "${widget.dessert.productTitle}",
-                      style: TextStyle(fontSize: 22, color: Colors.white),
+                      style: TextStyle(
+                          fontFamily: 'AkzidenzGrotesk BQ Medium',
+                          fontSize: 22,
+                          color: Colors.white),
                     ),
                     Text("\$${widget.dessert.productPrice}",
-                        style: TextStyle(fontSize: 24))
+                        style: TextStyle(
+                            fontFamily: 'AkzidenzGrotesk BQ Medium',
+                            fontSize: 24))
                   ],
                 ),
               ),

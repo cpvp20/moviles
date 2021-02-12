@@ -20,7 +20,7 @@ class _ItemGrainsState extends State<ItemGrains> {
       padding: const EdgeInsets.all(10.0),
       child: Stack(alignment: Alignment.center, children: [
         Container(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(30.0),
           width: 500,
           height: 260,
           decoration: BoxDecoration(color: grey, boxShadow: [
@@ -35,13 +35,21 @@ class _ItemGrainsState extends State<ItemGrains> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Text("Café de grano", style: TextStyle(fontSize: 15)),
+                    Text("Café de grano",
+                        style: TextStyle(
+                            fontFamily: 'AkzidenzGrotesk BQ Medium',
+                            fontSize: 15)),
                     Text(
                       "${widget.grains.productTitle}",
-                      style: TextStyle(fontSize: 22, color: Colors.white),
+                      style: TextStyle(
+                          fontFamily: 'AkzidenzGrotesk BQ Medium',
+                          fontSize: 22,
+                          color: Colors.white),
                     ),
                     Text("\$${widget.grains.productPrice}",
-                        style: TextStyle(fontSize: 24))
+                        style: TextStyle(
+                            fontFamily: 'AkzidenzGrotesk BQ Medium',
+                            fontSize: 24))
                   ],
                 ),
               ),

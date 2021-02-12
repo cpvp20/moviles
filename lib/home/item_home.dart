@@ -1,3 +1,4 @@
+import 'package:estructura_practica_1/colors.dart';
 import 'package:flutter/material.dart';
 
 class ItemHome extends StatelessWidget {
@@ -23,7 +24,7 @@ class ItemHome extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30),
               ),
-              color: Theme.of(context).primaryColor,
+              color: blue,
               child: Container(height: 180),
             ),
           ),
@@ -51,10 +52,6 @@ class ItemHome extends StatelessWidget {
                     padding: const EdgeInsets.all(24.0),
                     child: Text(
                       "$title",
-                      style: Theme.of(context)
-                          .textTheme
-                          .headline5
-                          .copyWith(fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
                     ),
                   ),

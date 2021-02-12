@@ -20,7 +20,7 @@ class _ItemHotDrinksState extends State<ItemHotDrinks> {
       padding: const EdgeInsets.all(10.0),
       child: Stack(alignment: Alignment.center, children: [
         Container(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(30.0),
           width: 500,
           height: 260,
           decoration: BoxDecoration(color: grey, boxShadow: [
@@ -35,13 +35,21 @@ class _ItemHotDrinksState extends State<ItemHotDrinks> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Text("Café", style: TextStyle(fontSize: 15)),
+                    Text("Café",
+                        style: TextStyle(
+                            fontFamily: 'AkzidenzGrotesk BQ Medium',
+                            fontSize: 15)),
                     Text(
                       "${widget.drink.productTitle}",
-                      style: TextStyle(fontSize: 22, color: Colors.white),
+                      style: TextStyle(
+                          fontFamily: 'AkzidenzGrotesk BQ Medium',
+                          fontSize: 22,
+                          color: Colors.white),
                     ),
                     Text("\$${widget.drink.productPrice}",
-                        style: TextStyle(fontSize: 24))
+                        style: TextStyle(
+                            fontFamily: 'AkzidenzGrotesk BQ Medium',
+                            fontSize: 24))
                   ],
                 ),
               ),

@@ -2,8 +2,10 @@ import 'package:estructura_practica_1/cart/cart.dart';
 import 'package:estructura_practica_1/dessert/dessert_page.dart';
 import 'package:estructura_practica_1/drinks/hot_drinks_page.dart';
 import 'package:estructura_practica_1/grains/grains_page.dart';
+import 'package:estructura_practica_1/login.dart';
 import 'package:estructura_practica_1/models/product_item_cart.dart';
 import 'package:estructura_practica_1/models/product_repository.dart';
+import 'package:estructura_practica_1/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:estructura_practica_1/colors.dart';
 
@@ -25,6 +27,59 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            UserAccountsDrawerHeader(
+              decoration: BoxDecoration(color: orange),
+              accountName: Text(PROFILE_NAME),
+              accountEmail: Text(PROFILE_EMAIL),
+              currentAccountPicture: CircleAvatar(
+                backgroundColor: grey,
+                child: CircleAvatar(
+                  backgroundImage: NetworkImage(
+                    PROFILE_PICTURE,
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            ListTile(
+              title: Text(PROFILE_CART),
+              leading: Icon(Icons.shopping_cart),
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => Cart(productsList: cartItems)));
+              },
+            ),
+            ListTile(
+              title: Text(PROFILE_WISHES),
+              leading: Icon(Icons.favorite_border),
+              onTap: () {},
+            ),
+            ListTile(
+              title: Text(PROFILE_HISTORY),
+              leading: Icon(Icons.store),
+              onTap: () {},
+            ),
+            ListTile(
+              title: Text(PROFILE_SETTINGS),
+              leading: Icon(Icons.settings),
+              onTap: () {},
+            ),
+            ListTile(
+              title: Text("CERRAR SESION"),
+              leading: Icon(Icons.logout),
+              onTap: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) => LoginPage()));
+              },
+            ),
+          ],
+        ), // Populate the Drawer in the next step.
+      ),
       appBar: AppBar(
         centerTitle: true,
         actions: <Widget>[
@@ -38,6 +93,7 @@ class _HomeState extends State<Home> {
         ],
         title: Text("Inicio"),
       ),
+      key: _scaffoldKey,
       body: ListView(
         padding: const EdgeInsets.symmetric(vertical: 40.0, horizontal: 50),
         children: <Widget>[
@@ -174,10 +230,11 @@ class _HomeState extends State<Home> {
             onTap: () {
               _scaffoldKey.currentState
                 ..hideCurrentSnackBar()
-                ..showSnackBar(SnackBar(
-                  content: Text('Proximamente'),
-                ));
-              setState(() {});
+                ..showSnackBar(
+                  SnackBar(
+                    content: Text('Proximamente'),
+                  ),
+                );
             },
             child: Padding(
               padding: const EdgeInsets.all(10.0),

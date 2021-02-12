@@ -45,6 +45,7 @@ class BeginPage extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 14,
                         color: black,
+                        fontFamily: 'AkzidenzGrotesk BQ Medium',
                         fontWeight: FontWeight.w100),
                   ),
                 ),
@@ -74,6 +75,7 @@ class BeginPage extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 14,
                         color: black,
+                        fontFamily: 'AkzidenzGrotesk BQ Medium',
                         fontWeight: FontWeight.w100),
                   ),
                 ),

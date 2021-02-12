@@ -63,7 +63,10 @@ class _RegisterPageState extends State<RegisterPage> {
               Padding(
                 padding: const EdgeInsets.only(bottom: 8.0),
                 child: Text('Nombre completo:',
-                    style: TextStyle(color: white, fontSize: 12)),
+                    style: TextStyle(
+                        color: white,
+                        fontFamily: 'AkzidenzGrotesk BQ Medium',
+                        fontSize: 12)),
               ),
               TextField(
                 controller: _usernameController,
@@ -75,7 +78,10 @@ class _RegisterPageState extends State<RegisterPage> {
               Padding(
                 padding: const EdgeInsets.only(bottom: 8.0),
                 child: Text('Email:',
-                    style: TextStyle(color: white, fontSize: 12)),
+                    style: TextStyle(
+                        color: white,
+                        fontFamily: 'AkzidenzGrotesk BQ Medium',
+                        fontSize: 12)),
               ),
               TextField(
                 controller: _emailController,
@@ -87,12 +93,16 @@ class _RegisterPageState extends State<RegisterPage> {
               Padding(
                 padding: const EdgeInsets.only(bottom: 8.0),
                 child: Text('Password:',
-                    style: TextStyle(color: white, fontSize: 12)),
+                    style: TextStyle(
+                        color: white,
+                        fontFamily: 'AkzidenzGrotesk BQ Medium',
+                        fontSize: 12)),
               ),
               TextField(
                 controller: _passwordController,
                 onChanged: _checkConditions(),
-                style: TextStyle(color: white),
+                style: TextStyle(
+                    color: white, fontFamily: 'AkzidenzGrotesk BQ Medium'),
                 decoration: InputDecoration(
                     filled: false,
                     suffixIcon: IconButton(
@@ -142,6 +152,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         style: TextStyle(
                             fontSize: 14,
                             color: black,
+                            fontFamily: 'AkzidenzGrotesk BQ Medium',
                             fontWeight: FontWeight.w100),
                       ),
                     ),
@@ -166,7 +177,10 @@ class _RegisterPageState extends State<RegisterPage> {
                 "¿Ya tienes una cuenta?",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    color: white, fontSize: 12, fontWeight: FontWeight.w100),
+                    color: white,
+                    fontFamily: 'AkzidenzGrotesk BQ Medium',
+                    fontSize: 12,
+                    fontWeight: FontWeight.w100),
               ),
               GestureDetector(
                 child: Text(
@@ -174,6 +188,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       color: white,
+                      fontFamily: 'AkzidenzGrotesk BQ Medium',
                       fontSize: 12,
                       decoration: TextDecoration.underline,
                       fontWeight: FontWeight.w100),
