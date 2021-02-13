@@ -13,6 +13,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: APP_TITLE,
       home: SplashPage(),
+      theme: ThemeData(
+          unselectedWidgetColor: Colors.white,
+          inputDecorationTheme: InputDecorationTheme(
+            filled: true,
+            fillColor: Colors.white,
+            enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(0.0),
+                borderSide: BorderSide(color: Colors.white, width: 1.0)),
+            focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(0.0),
+                borderSide: BorderSide(color: Colors.white, width: 1.0)),
+          ),
+          fontFamily: 'AkzidenzGrotesk'),
     );
   }
 }

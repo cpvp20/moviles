@@ -153,7 +153,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             fontSize: 14,
                             color: black,
                             fontFamily: 'AkzidenzGrotesk BQ Medium',
-                            fontWeight: FontWeight.w100),
+                            fontWeight: FontWeight.w700),
                       ),
                     ),
                   ),
@@ -180,7 +180,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     color: white,
                     fontFamily: 'AkzidenzGrotesk BQ Medium',
                     fontSize: 12,
-                    fontWeight: FontWeight.w100),
+                    fontWeight: FontWeight.w700),
               ),
               GestureDetector(
                 child: Text(
@@ -191,7 +191,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       fontFamily: 'AkzidenzGrotesk BQ Medium',
                       fontSize: 12,
                       decoration: TextDecoration.underline,
-                      fontWeight: FontWeight.w100),
+                      fontWeight: FontWeight.w700),
                 ),
                 onTap: () {
                   Navigator.of(context).push(

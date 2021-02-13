@@ -104,7 +104,7 @@ class _LoginPageState extends State<LoginPage> {
                         style: TextStyle(
                             fontSize: 14,
                             color: black,
-                            fontWeight: FontWeight.w100),
+                            fontWeight: FontWeight.w700),
                       ),
                     ),
                   ),
@@ -132,7 +132,7 @@ class _LoginPageState extends State<LoginPage> {
                     color: white,
                     fontFamily: 'AkzidenzGrotesk BQ Medium',
                     fontSize: 12,
-                    fontWeight: FontWeight.w100,
+                    fontWeight: FontWeight.w700,
                   ),
                 ),
               ),
@@ -146,7 +146,7 @@ class _LoginPageState extends State<LoginPage> {
                   color: white,
                   fontFamily: 'AkzidenzGrotesk BQ Medium',
                   fontSize: 12,
-                  fontWeight: FontWeight.w100,
+                  fontWeight: FontWeight.w700,
                 ),
               ),
               GestureDetector(
@@ -158,7 +158,7 @@ class _LoginPageState extends State<LoginPage> {
                     fontFamily: 'AkzidenzGrotesk BQ Medium',
                     fontSize: 12,
                     decoration: TextDecoration.underline,
-                    fontWeight: FontWeight.w100,
+                    fontWeight: FontWeight.w700,
                   ),
                 ),
                 onTap: () {
